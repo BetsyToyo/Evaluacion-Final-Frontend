@@ -1,3 +1,5 @@
+//JQUERY SMOTH SCROLL Y CAMBIO COLOR NAVBAR NAVBAR
+
 $(function(){
 
     $("a").click(function(){
@@ -5,14 +7,21 @@ $(function(){
 
         $("html,body").animate({
             scrollTop: $(numeral).offset().top -20
-        })
+        },1000)
 
         $(".navbar").css({"background-color":"#0dcaf0"})
 
     });
 
-    $("html,body").scroll(function(){
+    $(window).scroll(function(){
         $(".navbar").css({"background-color":"#0dcaf0"})
     });
+   
 })
 
+//CODIGO PARA HABILITAR TOOLTIPS
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})

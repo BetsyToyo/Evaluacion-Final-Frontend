@@ -17,14 +17,8 @@ body{
 }
 
 .navbar{
-    /*position:absolute;*/
-    width:100%;
-   /* z-index:10;*/
+    width:100%;   
     max-width:100%;    
-}
-
-.navbar-toggler-icon{    
-    background-color: #FFFFFF;
 }
 
 .linea-titulo{
